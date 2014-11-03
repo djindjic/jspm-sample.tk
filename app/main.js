@@ -1,0 +1,1 @@
+import 'ionic/js/ionic-angulardrfter';
