@@ -7,8 +7,10 @@
     "name": "jspm_folders",
     "directories": {
       "baseURL": "app",
-      "lib": "app/src"
+      "lib": "app/src",
+      "packages": "app/jspm_packages"
     },
+    "configFile": "app/config.js",
     "dependencies": {
       "ionic": "^0.9.27"
     }
