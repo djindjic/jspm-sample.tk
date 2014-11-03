@@ -1,1 +1,1 @@
-import 'ionic/js/ionic-angulardrfter';
+import 'ionic/js/ionic-angular';
