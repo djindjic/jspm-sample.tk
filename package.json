@@ -6,13 +6,12 @@
   "jspm": {
     "name": "jspm_folders",
     "directories": {
-      "lib": "app/src",
       "baseURL": "app",
-      "packages": "app/jspm_packages"
+      "lib": "app/src"
     },
-    "configFile": "app/config.js",
     "dependencies": {
-      "ionic": "^0.9.27"
+      "ionic": "^0.9.27",
+      "angular": "^1.3.1"
     }
   }
 }
