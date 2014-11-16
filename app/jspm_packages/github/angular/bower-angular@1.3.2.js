@@ -1,0 +1,1 @@
+export * from "github:angular/bower-angular@1.3.2/angular.min";

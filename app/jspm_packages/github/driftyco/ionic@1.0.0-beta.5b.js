@@ -1,0 +1,1 @@
+export * from "github:driftyco/ionic@1.0.0-beta.5b/js/ionic";

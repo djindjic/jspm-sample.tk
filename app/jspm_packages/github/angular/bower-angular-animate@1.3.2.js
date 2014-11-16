@@ -1,0 +1,1 @@
+export * from "github:angular/bower-angular-animate@1.3.2/angular-animate";
