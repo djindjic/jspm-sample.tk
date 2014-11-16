@@ -11,6 +11,10 @@
       "lib": "app/src"
     },
     "dependencies": {
+      "angular": "^1.3.2",
+      "angular-animate": "^1.3.2",
+      "angular-sanitize": "^1.3.2",
+      "angular-ui-router": "^0.2.10",
       "ionic": "^1.0.0-beta.13"
     }
   }
