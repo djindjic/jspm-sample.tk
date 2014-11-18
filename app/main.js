@@ -1,9 +1,5 @@
-// import "angular-animate";
-// import "angular-sanitize";
-// import "angular-ui-router";
-
 import "ionic";
-import 'ionic/js/ionic-angular';
+import angular from "angular";
 
 angular.module('ionicApp', ['ionic'])
       .controller('MyController', ['$scope', function ($scope) {
@@ -11,6 +7,5 @@ angular.module('ionicApp', ['ionic'])
       }]);
 
 angular.element(document).ready(function() {
-
   angular.bootstrap(document, ["ionicApp"]);
 }); 

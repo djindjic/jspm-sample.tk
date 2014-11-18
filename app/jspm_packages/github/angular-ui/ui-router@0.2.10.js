@@ -1,1 +1,0 @@
-export * from "github:angular-ui/ui-router@0.2.10/release/angular-ui-router";
