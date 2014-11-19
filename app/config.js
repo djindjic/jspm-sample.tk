@@ -2,6 +2,24 @@ System.config({
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js"
+  },
+  "bundles": {
+    "build": [
+      "github:systemjs/plugin-css@0.1.0/css",
+      "github:driftyco/ionic-bower@1.0.0-beta.13/js/ionic",
+      "github:angular/bower-angular@1.3.3/angular.min",
+      "github:angular/bower-angular-animate@1.3.3/angular-animate",
+      "github:angular/bower-angular-sanitize@1.3.3/angular-sanitize",
+      "github:angular-ui/ui-router@0.2.10/release/angular-ui-router",
+      "github:systemjs/plugin-css@0.1.0",
+      "github:angular/bower-angular@1.3.3",
+      "github:angular/bower-angular-animate@1.3.3",
+      "github:angular/bower-angular-sanitize@1.3.3",
+      "github:angular-ui/ui-router@0.2.10",
+      "github:driftyco/ionic-bower@1.0.0-beta.13/js/ionic-angular",
+      "github:driftyco/ionic-bower@1.0.0-beta.13",
+      "src/main"
+    ]
   }
 });
 
