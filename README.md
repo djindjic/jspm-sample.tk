@@ -1,4 +1,4 @@
 ```
-git clone git@github.com:djindjic/jspm_sample_project.git && cd jspm_sample_project
+git clone git@github.com:djindjic/jspm-sample.tk.git && cd jspm-sample.tk
 npm install && jspm install && gulp
 ```
