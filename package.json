@@ -1,18 +1,34 @@
 {
+  "name": "jspm-sample",
   "devDependencies": {
-    "gulp": "^3.8.8",
+    "chai": "^1.10.0",
+    "divshot-cli": "^1.6.0",
+    "gulp": "^3.8.10",
     "gulp-load-plugins": "^0.7.1",
-    "gulp-webserver": "^0.8.3"
+    "gulp-webserver": "^0.8.3",
+    "jspm": "^0.10.0",
+    "karma": "^0.12.28",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jspm": "^1.1.1",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^0.2.2",
+    "karma-sauce-launcher": "^0.2.10",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.1.0",
+    "promise": "^6.0.1",
+    "protractor": "^1.6.1",
+    "sinon": "^1.12.2"
   },
   "jspm": {
-    "name": "jspm-sample.tk",
     "directories": {
-      "baseURL": "app",
-      "lib": "app/src"
+      "baseURL": "www",
+      "lib": "www/app"
     },
     "dependencies": {
-      "angular": "^1.3.3",
-      "ionic": "1.0.0-beta.13"
+      "angular": "^1.3.6",
+      "css": "^0.1.0",
+      "text": "^0.0.2"
     }
   }
 }

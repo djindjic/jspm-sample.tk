@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '0.10'
+before_script:
+  - jspm install
+script:
+  - node_modules/karma/bin/karma start karma.conf.js --single-run
+  - divshot push development -t $DIVSHOT_KEY
+  - protractor --baseUrl='http://development.jspm-sample.divshot.io/' protractor.conf.js
+  - jspm bundle app/bootstrap www/bundle.$(date +%s | sha256sum | base64 | head -c30; echo).js --inject --minify
+  - divshot push staging -t $DIVSHOT_KEY
+  - protractor --baseUrl='http://staging.jspm-sample.divshot.io/' protractor.conf.js
+after_success:
+  - divshot promote staging production -t $DIVSHOT_KEY

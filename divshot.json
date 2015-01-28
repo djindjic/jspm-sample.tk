@@ -1,0 +1,9 @@
+{
+  "name": "jspm-samnple",
+  "root": "www",
+  "routes": {
+    "**": "index.html"
+  },
+  "clean_urls": true,
+  "error_page": "error.html"
+}
