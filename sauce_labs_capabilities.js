@@ -3,7 +3,7 @@ module.exports.capabilities = {
     base: 'SauceLabs',
     browserName: 'chrome',
     platform: 'Linux',
-    version: '38'
+    version: '35'
   },
   sl_firefox: {
     base: 'SauceLabs',
