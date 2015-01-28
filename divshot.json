@@ -1,5 +1,5 @@
 {
-  "name": "jspm-samnple",
+  "name": "jspm-sample",
   "root": "www",
   "routes": {
     "**": "index.html"
