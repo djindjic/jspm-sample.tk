@@ -5,12 +5,12 @@ module.exports.capabilities = {
     platform: 'Linux',
     version: '35'
   },
-  // sl_firefox: {
-  //   base: 'SauceLabs',
-  //   browserName: 'firefox',
-  //   platform: 'Linux',
-  //   version: '14'
-  // },
+  sl_firefox: {
+    base: 'SauceLabs',
+    browserName: 'firefox',
+    platform: 'Linux',
+    version: '31'
+  },
   sl_ios_safari: {
     base: 'SauceLabs',
     browserName: 'safari',
