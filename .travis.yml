@@ -3,6 +3,7 @@ sudo: false
 node_js:
   - '0.10'
 before_script:
+  - jspm config endpoints.github.auth $JSPM_AUTH
   - jspm install
 script:
   - node_modules/karma/bin/karma start karma.conf.js --single-run
