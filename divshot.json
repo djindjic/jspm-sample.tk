@@ -5,5 +5,10 @@
     "**": "index.html"
   },
   "clean_urls": true,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "cache_control": {
+    "/jspm_packages/**": 31536000,
+    "/bundle/**": 31536000,
+    "/": false
+  }
 }
