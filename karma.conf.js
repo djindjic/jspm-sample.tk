@@ -72,6 +72,9 @@ module.exports = function(config) {
   if(process.env.TRAVIS){
     configuration.customLaunchers = capabilities;
     configuration.browsers = Object.keys(capabilities);
+    configuration.sauceLabs = {
+        testName: 'jspm-sample.tk karma test'
+    }
   }
 
   config.set(configuration);
