@@ -7,6 +7,12 @@ System.config({
   }
 });
 
+// System.config({
+//   traceurOptions: {
+//     annotations: true
+//   }
+// });
+
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.3.12",
