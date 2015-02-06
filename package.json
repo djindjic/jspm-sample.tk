@@ -1,5 +1,6 @@
 {
   "name": "jspm-sample",
+  "repository": "djindjic/jspm-sample.tk",
   "devDependencies": {
     "chai": "^1.10.0",
     "divshot-cli": "^1.6.0",
