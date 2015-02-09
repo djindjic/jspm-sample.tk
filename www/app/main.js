@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-material';
 
 export let mainModule = angular.module('jspm-sample', ['ngMaterial']);
 
