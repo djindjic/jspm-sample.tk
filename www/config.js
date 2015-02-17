@@ -1,10 +1,10 @@
 System.config({
+  "baseURL": "/",
+  "transpiler": "6to5",
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js",
-    "jspm-sample/*": "app/*.js",
-    "jspm-sample.tk/*": "app/*.js"
+    "npm:*": "jspm_packages/npm/*.js"
   }
 });
 
