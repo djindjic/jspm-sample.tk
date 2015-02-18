@@ -9,7 +9,6 @@
   "cache_control": {
     "/jspm_packages/**": 31536000,
     "/bundle/**": 31536000,
-    "/styles/**": 31536000,
     "/": false
   }
 }

@@ -1,12 +1,16 @@
 language: node_js
 sudo: false
 node_js:
-  - '0.10'
+  - '0.12'
 before_script:
+  - npm install -g jspm
+  - npm install -g protractor
+  - npm install -g karma-cli
+  - npm install -g divshot-cli
   - jspm config endpoints.github.auth $JSPM_AUTH
   - jspm install
 script:
-  - node_modules/karma/bin/karma start karma.conf.js --single-run
+  - karma start karma.conf.js --single-run
   - divshot push development -t $DIVSHOT_KEY
   - protractor --baseUrl='http://development.jspm-sample.divshot.io/' protractor.conf.js
   - jspm bundle app/bootstrap www/bundle/$(date +%s | sha256sum | base64 | head -c30; echo).js --inject --minify

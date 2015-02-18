@@ -3,11 +3,9 @@
   "repository": "djindjic/jspm-sample.tk",
   "devDependencies": {
     "chai": "^1.10.0",
-    "divshot-cli": "^1.6.0",
     "gulp": "^3.8.10",
     "gulp-load-plugins": "^0.7.1",
     "gulp-webserver": "^0.8.3",
-    "jspm": "^0.10.0",
     "karma": "^0.12.28",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.7",
@@ -18,7 +16,6 @@
     "karma-sinon": "^1.0.4",
     "mocha": "^2.1.0",
     "promise": "^6.0.1",
-    "protractor": "^1.6.1",
     "sinon": "^1.12.2"
   },
   "jspm": {
