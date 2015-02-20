@@ -1,6 +1,7 @@
 var Promise = require('promise'),
     gulp    = require('gulp'),
     $       = require('gulp-load-plugins')();
+    cachebust = new $.cachebust;
 
 var startServer = function(){
   return new Promise(function (fulfil) {
@@ -19,3 +20,24 @@ gulp.task('default',
     startServer();
   }
 );
+
+gulp.task('bust-config', function () {
+  return gulp.src('www/config.js')
+      .pipe(cachebust.resources())
+      .pipe(gulp.dest('www'));
+});
+
+gulp.task('build-index', ['bust-config'], function () {
+  return gulp.src('www/index.html')
+      .pipe(cachebust.references())
+      .pipe($.htmlmin({
+        collapseWhitespace: true,
+        conservativeCollapse: true,
+        minifyJS: true,
+        minifyCSS: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeComments: true
+      }))
+      .pipe(gulp.dest('www'));
+});
