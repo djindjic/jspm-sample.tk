@@ -1,6 +1,6 @@
 System.config({
   "baseURL": "/",
-  "transpiler": "babel",
+  "transpiler": "traceur",
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
