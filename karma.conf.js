@@ -14,7 +14,7 @@ module.exports = function(config) {
     jspm: {
       // Edit this to your needs
       loadFiles: ['www/app/**/*.spec.js'],
-      serveFiles: ['www/app/**/*.js']
+      serveFiles: ['www/app/**/*.js', 'www/app/**/*.css', 'www/app/**/*.html']
     },
 
     proxies: {
