@@ -28,6 +28,7 @@ gulp.task('bust-config', function () {
       .pipe(gulp.dest('www'));
 });
 
+
 gulp.task('build-index', ['bust-config'], function () {
   return gulp.src('www/index.html')
       .pipe(cachebust.references())
